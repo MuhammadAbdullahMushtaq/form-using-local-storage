@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style-dashboard.css">
+    
+    <title>Profile</title>
+</head>
+
+<body onload="details()">
+    <div class="container">
+        <div class="title">Profile</div>
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" id="fullname">
+                </div>
+                <div class="input-box">
+                    <span class="details">User Name</span>
+                    <input type="text" id="username">
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" id="email">
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="number" id="phonenumber">
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="text" id="password">
+                </div>
+                <div class="input-box">
+                    <span class="details">Address</span>
+                    <input type="text" id="Address">
+                </div>
+                <div>
+                    <button onclick="logOut()" id="toggle">Log Out</button>
+                </div>
+                <div id="dark">
+                    <input id="toggle" onclick="darkMode()" type="button" value="Dark Mode">
+                </div>
+                <div style="display: none;" id="light">
+                    <input id="toggle" onclick="lightMode()" type="button" value="Light Mode">
+                </div>
+
+            </div>
+        </div>
+
+</body>
+<script src="app.js"></script>
+</html>

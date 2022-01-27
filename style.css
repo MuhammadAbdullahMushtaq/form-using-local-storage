@@ -135,12 +135,25 @@ form .button input:hover{
     background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
 
-.btn{
+/* .btn{
     max-width: 100px;
     width: 100%;
     background: #71b7e6;
     border: 1px solid #9b59b6;
     border-radius: 10px;
+} */
+
+.toggle{
+    height: 100%;
+    width: 48%;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 
 
@@ -162,11 +175,28 @@ form .button input:hover{
     .user-details::-webkit-scrollbar{
         width: 0;
     }
+    .toggle{
+        width: 68%;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 300px){
     .category{
         display: flex;
         flex-direction: column;
+    }
+    .toggle{
+        width: 95%;
+        font-size: 15px;
+    }
+    .placehold::placeholder{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 230px){
+    .toggle{
+        width: 100%;
     }
 }

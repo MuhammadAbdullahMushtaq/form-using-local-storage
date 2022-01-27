@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Page</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">    
     <link rel="stylesheet" href="style.css">
+    
+    <title>Sign Up Page</title>
 </head>
+
 <body>
     <div class="container">
         <div class="title">Registration</div>
@@ -15,29 +18,34 @@
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">Full Name</span>
-                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="text" class="placehold" id="fullName" placeholder="Enter Your Name" required>
                 </div>
                 <div class="input-box">
                     <span class="details">User Name</span>
-                    <input type="text" placeholder="Enter Your User Name" required>
+                    <input type="text" class="placehold" id="userName" placeholder="Enter Your User Name" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Email</span>
-                    <input type="email" placeholder="Enter Your Email" required>
+                    <input type="email" class="placehold" id="email" placeholder="Enter Your Email" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Phone Number</span>
-                    <input type="number" placeholder="Enter Your Phone Number" required>
+                    <input type="number" id="phoneNumber" class="placehold" placeholder="Enter Your Phone Number" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Password</span>
-                    <input type="password" placeholder="Enter Your Password" required>
+                    <input type="password" class="placehold" id="password" placeholder="Enter Your Password" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">Confirm Password</span>
-                    <input type="password" placeholder="Confirm Your Password" required>
+                    <span class="details">Address</span>
+                    <input type="password" id="address" class="placehold" placeholder="Enter Home Address" required>
                 </div>
             </div>
+
+            <div class="input-box">
+                <button id="toggle" class="toggle" onclick="toggler()">Show Password</button>
+            </div>
+
             <div class="gender-details">
                 <input type="radio" name="gender" id="dot-1">
                 <input type="radio" name="gender" id="dot-2">
@@ -59,16 +67,16 @@
                 </div>
             </div>
             <div class="button">
-                <input type="submit" value="Register">
+                <input type="button" onclick="createAccount()" value="Register">
             </div>
             <div class="button">
                 <input type="button" onclick="login()" value="Login">
             </div>
-                <input class="btn" type="button" onclick="darkMode()" value="Dark Mode" id="dark">
-                <input class="btn" style="display: none;" type="button" onclick="lightMode()" value="Light Mode" id="light">
+                <input class="toggle" type="button" onclick="darkMode()" value="Dark Mode" id="dark">
+                <input class="toggle" style="display: none;" type="button" onclick="lightMode()" value="Light Mode" id="light">
         </form>
     </div>
 
-<script src="app.js"></script>
 </body>
+<script src="app.js"></script>
 </html>
